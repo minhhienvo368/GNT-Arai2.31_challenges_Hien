@@ -9,3 +9,5 @@ I selected Pangram and Binary challenges.
 1. Determine if a sentence is a pangram. Pangram is defined as a sentence using every letter of the alphabet at least once.
 The best known English pangram is "The quick brown fox jumps over the lazy dog."
 2. Binary: Write a program that will convert a binary number, represented as a string (e.g. '101010'), to its decimal equivalent using first principles
+
+The solutions can be found in this folder as Notebook files (.ipynb) or also can be found in the folder of challenges as Python files (.py)
