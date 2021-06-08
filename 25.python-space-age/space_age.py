@@ -5,6 +5,12 @@ class SpaceAge:
         self.seconds = seconds
         pass
 
+    def seconds_to_years(self):
+        return self.seconds / (60 * 60 * 24 * 365.25)  # Calculate seconds to years
+
+    def calc_years(self, earth_years):
+        return self.seconds_to_years() / earth_years  # Base
+
     def on_earth(self):
         years = self.seconds_to_years()
         return round(years, 2)
@@ -37,10 +43,8 @@ class SpaceAge:
         years = self.calc_years(164.79132)
         return round(years, 2)
 
-    def seconds_to_years(self):
-        return self.seconds / 60 / 60 / 24 / 365.25  # Calculate seconds to years
-
-    def calc_years(self, earth_years):
-        return self.seconds_to_years() / earth_years
-
-#seconds = SpaceAge(1e9)
+age = SpaceAge(8210123456)
+age_on_Earth = age.on_earth()
+age_on_Neptune = age.on_neptune()
+print(age_on_Earth)
+print(age_on_Neptune)
