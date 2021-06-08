@@ -1,7 +1,5 @@
 import unittest
-
 from space_age import SpaceAge
-
 
 class SpaceAgeTest(unittest.TestCase):
     def test_age_in_seconds(self):
